@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+body {
+  font-family: $font-main;
+  color: $dark;
+  line-height: 1.2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1252px;
+}
+
+li {
+  display: inline-block;
+}
+
+sup,
+sub {
+  text-transform: none;
+  display: block;
+  font-family: $font-accent;
+  color: $blue;
+  font-size: 20px;
+  @include mediaTablet {
+    font-size: 18px;
+  }
+}
+
+del {
+  text-decoration: line-through;
+  text-decoration-color: $accent;
+}
+
+.redText {
+  color: $accent;
+  font-weight: 700;
+}
+
+.title-3 {
+  max-width: 764px;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 1.35;
+
+  @include mediaTablet {
+    position: relative;
+    font-size: 28px;
+    max-width: 335px;
+  }
+}
+
+.title-2 {
+  text-transform: uppercase;
+  font-size: 54px;
+  line-height: 1.35;
+  align-items: baseline;
+  @include mediaTablet {
+    font-size: 36px;
+  }
+}
+
+.none {
+  display: none !important;
+}

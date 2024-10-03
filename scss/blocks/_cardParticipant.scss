@@ -1,0 +1,38 @@
+.participant-card {
+  text-align: center;
+  padding-left: 37px;
+  padding-right: 37px;
+  min-width: 394px;
+  @include mediaTablet {
+    min-width: 335px;
+  }
+}
+.participant-name {
+  font-family: $font-accent;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 28px;
+  margin-bottom: 6px;
+}
+.participant-title {
+  font-family: $font-accent;
+  font-weight: 400;
+  opacity: 0.6;
+  font-size: 20px;
+}
+.participant-button {
+  margin-top: 20px;
+  color: $blue;
+  font-family: $font-accent;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid $blue;
+  border-radius: 62px;
+  &:hover {
+    background-color: $blue;
+    transform: scale(0.9);
+    transition: background-color 0.2s ease-in;
+    color: $white;
+  }
+}

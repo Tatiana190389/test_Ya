@@ -1,0 +1,43 @@
+.running-line {
+  background-color: $accent;
+  overflow: hidden;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: relative;
+  @include mediaTablet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.running_line-text {
+  color: $white;
+  font-family: $font-accent;
+  font-weight: 400;
+  font-size: 22px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  display: flex;
+  animation: running-animation 10s linear infinite;
+  @include mediaTablet {
+    font-size: 16px;
+  }
+}
+.sentence {
+  flex-shrink: 0;
+}
+.eclipse {
+  padding: 12px;
+  @include mediaTablet {
+    padding: 6px 12px 12px;
+  }
+}
+
+@keyframes running-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 24px));
+  }
+}

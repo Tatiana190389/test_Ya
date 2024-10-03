@@ -1,0 +1,15 @@
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+
+@import './blocks/header';
+@import './blocks/runningLine';
+@import './blocks/info';
+@import './blocks/game';
+@import './blocks/_stages';
+@import './blocks/cardStages';
+@import './blocks/cardParticipant';
+@import './blocks/participants';
+@import './blocks/footer';
+@import './blocks/table';

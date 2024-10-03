@@ -1,0 +1,28 @@
+.info {
+  padding-top: 60px;
+  padding-bottom: 64px;
+  @include mediaTablet {
+    padding-top: 48px;
+    padding-bottom: 120px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img-browser {
+    @include mediaTablet {
+      display: none;
+    }
+  }
+  .img-mob {
+    display: none;
+    @include mediaTablet {
+      display: block;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}

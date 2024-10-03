@@ -1,0 +1,25 @@
+.game {
+  margin-bottom: 165px;
+  @include mediaTablet {
+    margin-bottom: 120px;
+  }
+}
+.game__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 17px;
+  @include mediaTablet {
+    flex-direction: column;
+  }
+}
+.blueText {
+  color: $blue;
+  font-family: $font-accent;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  @include mediaTablet {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,36 @@
+.card {
+  background-image: url('./../img/cardBackground.png');
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: left;
+
+  @include mediaTablet {
+    width: 335px;
+    height: 300px;
+  }
+
+  &-description {
+    font-family: $font-accent;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+.circle {
+  background: $white;
+  border-radius: 60px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+
+  &-number {
+    padding: 11px;
+    font-size: 20px;
+    font-family: $font-accent;
+  }
+}
